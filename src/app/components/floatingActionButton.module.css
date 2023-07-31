@@ -1,0 +1,79 @@
+.item_list {
+    list-style: none;
+    opacity: 0;
+    transform: translateY(10    0px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.item_list li {
+    background-color: #190c26e6;
+    border-radius: 20px;
+    color: #dfdde4;
+    margin-bottom: 30px;
+    opacity: 0;
+    padding:4px 15px 4px 0;
+    text-align: right;
+    width: 160px;
+}
+
+.item_list.show {
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+}
+
+.item_list.show li {
+    animation: fade-in 0.5s ease-in-out forwards;
+    transition-delay: 0.2s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.item_list.show li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.item_list.show li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.item_list.show li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+.item_list.hide li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.item_list.hide li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.item_list.hide li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.rotateAddButton{
+    transform: rotate(45deg);
+}
+
+.revertRotateAddButton{
+    transform: rotate(0deg);
+}
+
+.displayCurtain{
+    background-color: #0e121b8a;
+    transition: all 500ms ease-in-out;
+    z-index: 99;
+}

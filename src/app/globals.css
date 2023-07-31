@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+ */
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: white;
+}
+
+.padding_horizontal {
+  padding: 0 20px;
+}
+
+.displayCurtain {
+  background-color: #0e121b8a;
+  transition: all 500ms ease-in-out;
+  z-index: 99;
+}
+
+.dragDownBtn {
+  transform: translateY(110px) !;
+}
+
+.hiddenMenu {
+  background: #000;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  right: 10px;
+  scale: 0;
+  top: 4rem;
+  transition: all 200ms ease-in-out;
+}
+
+.displayMenu {
+  scale: 1 !important;
+  transform-origin: top right;
+}
